@@ -765,6 +765,13 @@ img {
   box-shadow: var(--shadow-lg);
 }
 
+.trust-card h4 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--primary-dark-blue);
+  line-height: var(--leading-snug);
+}
+
 .trust-card-white {
   background: var(--bg-white);
 }
@@ -820,13 +827,6 @@ img {
 
 .trust-card-cyan .trust-card-icon svg {
   color: var(--text-white);
-}
-
-.trust-card h4 {
-  font-size: var(--text-lg);
-  font-weight: var(--font-semibold);
-  color: var(--primary-dark-blue);
-  line-height: var(--leading-snug);
 }
 
 .trust-stats {
