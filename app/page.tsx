@@ -55,198 +55,214 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="about">
+      {/* How We Work Section */}
+      <section className="how-we-work">
         <div className="container">
-          <div className="about-layout">
-            <div className="about-image">
-              <img src="/team-doctors.jpg" alt="Medical team" />
-            </div>
-            <div className="about-content">
-              <h2>Who We Are</h2>
-              <p className="about-intro">At Opstra Medical Group, we believe that everyone deserves access to compassionate, high-quality healthcare. Based in Accra, we provide evidence-based medical care that is personalized, affordable, and delivered with the patient's needs in mind.</p>
+          <div className="how-we-work-layout">
+            <div className="how-we-work-content">
+              <h3 className="section-label">How We Work</h3>
+              <h2>A Comprehensive Directory For<br/>Your Health Care</h2>
+              <p className="subtitle">Explore services, specialists, and support in one place, easily find the services and specialists you need.</p>
 
-              <div className="about-features">
-                {['Excellence', 'Compassion', 'Innovation', 'Integrity'].map((value, index) => (
-                  <div className="feature-item" key={index}>
-                    <div className="feature-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                    </div>
-                    <div className="feature-text">
-                      <h4>{value}</h4>
-                      <p>We {value === 'Excellence' ? 'uphold the highest standards of care' : value === 'Compassion' ? 'care deeply about the people we serve' : value === 'Innovation' ? 'use modern technology to improve outcomes' : 'act with transparency and honesty'}</p>
-                    </div>
+              <div className="work-steps">
+                <div className="work-step">
+                  <div className="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
                   </div>
-                ))}
-              </div>
+                  <div className="step-content">
+                    <h4>Book an Appointment</h4>
+                    <p>Choose a convenient time and book online or by phone</p>
+                  </div>
+                </div>
 
-              <a href="#services" className="btn btn-secondary">Learn More</a>
+                <div className="work-step">
+                  <div className="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  </div>
+                  <div className="step-content">
+                    <h4>Conduct Checkup</h4>
+                    <p>Our medical team assesses your health and listens to your concerns</p>
+                  </div>
+                </div>
+
+                <div className="work-step">
+                  <div className="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                  </div>
+                  <div className="step-content">
+                    <h4>Perform Treatment</h4>
+                    <p>Receive the right care, tailored to your diagnosis and needs</p>
+                  </div>
+                </div>
+
+                <div className="work-step">
+                  <div className="step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  </div>
+                  <div className="step-content">
+                    <h4>Prescribe & Payment</h4>
+                    <p>Get your prescription and settle payments easily at our front desk</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="how-we-work-images">
+              <div className="image-grid">
+                <img src="/doctor-hero.jpg" alt="Medical professional" className="image-large" />
+                <img src="/team-doctors.jpg" alt="Medical team" className="image-small" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="services">
+      {/* Trust Section */}
+      <section className="trust-section">
         <div className="container">
-          <div className="section-header">
-            <h2>Our Healthcare Services</h2>
-          </div>
+          <div className="trust-layout">
+            <div className="trust-content">
+              <h3 className="section-label-white">Opstra Medical Group</h3>
+              <h2>Trust Us To Be There To Help<br/>All & Make Things Well Again</h2>
+              <p>At Opstra Medical Group, we believe that everyone deserves access to compassionate, high-quality healthcare. Based in Accra, Ghana, we are committed to providing personalized, evidence-based medical services that are affordable and focused on the unique needs of each patient.</p>
+              <a href="#contact" className="btn btn-cyan">Get Started</a>
+            </div>
 
-          <div className="services-grid">
-            {[
-              { title: 'General Practice', desc: 'Primary medical care for people of all ages, from everyday illnesses to chronic condition management.', icon: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2' },
-              { title: 'Preventive Health', desc: 'Stay ahead of illness with proactive screenings, lifestyle advice, and health education.', icon: 'M22 12h-4l-3 9L9 3l-3 9H2' },
-              { title: 'Specialist Services', desc: 'Expert care from trusted specialists including Urology, ENT, Surgery, Internal Medicine, and more.', icon: 'M9 11l3 3L22 4', dark: true },
-              { title: 'Cardiology', desc: 'Expert heart health care including ECG, echocardiogram, hypertension and cholesterol management.', icon: 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z' },
-              { title: 'Women\'s Health', desc: 'Comprehensive gynecological care from adolescence through menopause with expert support.', icon: 'M9 21 M20 21' },
-              { title: 'Mental Health', desc: 'Compassionate, discreet mental health support in a judgment-free space for all ages.', icon: 'M12 12' },
-            ].map((service, index) => (
-              <div className={`service-card ${service.dark ? 'service-card-dark' : ''}`} key={index}>
-                <div className="service-icon">
+            <div className="trust-cards">
+              <div className="trust-card trust-card-white">
+                <div className="trust-card-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d={service.icon}></path>
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h3>{service.title}</h3>
-                <p>{service.desc}</p>
+                <h4>Medical Advices &<br/>Check Ups</h4>
               </div>
-            ))}
+
+              <div className="trust-card trust-card-dark">
+                <div className="trust-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h4>Trusted Medical<br/>Treatment</h4>
+              </div>
+
+              <div className="trust-card trust-card-dark">
+                <div className="trust-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </div>
+                <h4>Emergency Help<br/>Available 24/7</h4>
+              </div>
+
+              <div className="trust-card trust-card-cyan">
+                <div className="trust-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                </div>
+                <h4>Medical Research<br/>Professionals</h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Appointment Section */}
-      <section className="appointment-section">
+      {/* Appointment + Form Section */}
+      <section className="appointment-form-section">
         <div className="container">
-          <div className="appointment-layout">
-            <div className="appointment-content">
-              <h2>How to Book An Appointment</h2>
-              <p className="lead-text">Getting the care you need is simple and convenient at Opstra Medical Group.</p>
-
-              <ul className="appointment-list">
-                <li><span className="list-number">01</span><span className="list-text">Call us directly at 5555555555</span></li>
-                <li><span className="list-number">02</span><span className="list-text">Send us a message on WhatsApp</span></li>
-                <li><span className="list-number">03</span><span className="list-text">Fill out our online booking form</span></li>
-                <li><span className="list-number">04</span><span className="list-text">Walk into our clinic - we welcome walk-ins</span></li>
-              </ul>
-
-              <a href="https://wa.me/5555555555" className="btn btn-primary">Book Now</a>
-            </div>
-            <div className="appointment-image">
-              <img src="/patient-smiling.jpg" alt="Happy patient" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Get Started?<br/>Book With Our Form</h2>
-            <p>Schedule your appointment today and experience quality healthcare that puts you first.</p>
-
-            <div className="cta-form">
-              <div className="form-row">
-                <input type="text" placeholder="Your Name" className="form-input" />
-                <input type="email" placeholder="Email Address" className="form-input" />
+          <div className="appointment-form-layout">
+            <div className="appointment-image-section">
+              <img src="/team-doctors.jpg" alt="Medical team" />
+              <div className="appointment-overlay">
+                <div className="overlay-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <h3>Make Appointment & Take<br/>Care Of Your Healthy Life</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
               </div>
-              <div className="form-row">
-                <input type="tel" placeholder="Phone Number" className="form-input" />
-                <select className="form-input">
-                  <option>Select Service</option>
-                  <option>General Practice</option>
-                  <option>Preventive Health</option>
-                  <option>Specialist Services</option>
-                  <option>Cardiology</option>
-                  <option>Women&apos;s Health</option>
-                  <option>Mental Health</option>
-                </select>
-              </div>
-              <button type="submit" className="btn btn-submit">Submit Request</button>
+            </div>
+
+            <div className="form-section">
+              <h2>Book With Our Form</h2>
+              <form className="booking-form">
+                <input type="text" placeholder="Your Name" className="form-input-white" />
+                <div className="form-row-inline">
+                  <input type="tel" placeholder="Phone" className="form-input-white" />
+                  <input type="email" placeholder="Your E-mail" className="form-input-white" />
+                </div>
+                <textarea placeholder="Message" rows={4} className="form-input-white form-textarea"></textarea>
+                <button type="submit" className="btn btn-cyan btn-full">Send Message</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonial Section */}
-      <section className="testimonial-section">
+      <section className="testimonial-section-new">
         <div className="container">
-          <div className="testimonial-content">
-            <div className="quote-icon">&quot;</div>
+          <h3 className="section-label-center">Testimonials</h3>
+          <h2 className="testimonial-title">What Patients Say About Us</h2>
+          <div className="testimonial-content-new">
+            <div className="quote-mark">&ldquo;</div>
             <blockquote>
-              <p>The care and attention I received at Opstra Medical Group was exceptional. The doctors took time to understand my concerns and provided comprehensive treatment. I highly recommend them to anyone seeking quality healthcare in Accra.</p>
-              <cite>— Patient Testimonial</cite>
+              <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint eiusmod tempor incididunt ut labore et dolore magna alique</p>
             </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* For Patients Section */}
-      <section id="patients" className="for-patients">
-        <div className="container">
-          <div className="section-header">
-            <h2>For Patients</h2>
-          </div>
-
-          <div className="patients-grid">
-            {[
-              { title: 'Insurance & Payment', desc: 'We accept major private insurance schemes and serve corporate partners.', icon: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
-              { title: 'Patient Forms', desc: 'Download and complete forms before your visit to save time.', icon: 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' },
-              { title: 'What to Expect', desc: 'Friendly staff, minimal wait times, and thorough consultations.', icon: 'M12 12' },
-            ].map((item, index) => (
-              <div className="patient-card" key={index}>
-                <div className="patient-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d={item.icon}></path>
-                  </svg>
-                </div>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-                <a href="#" className="link-arrow">Learn more →</a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="contact">
-        <div className="container">
-          <div className="contact-layout">
-            <div className="contact-info">
-              <h2>We&apos;re Here To Help You</h2>
-              <p>Get in touch with us today. We&apos;re ready to assist you with your healthcare needs.</p>
-
-              <div className="contact-details">
-                {[
-                  { title: 'Location', text: 'Asylum Down, Accra', icon: 'M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z' },
-                  { title: 'Phone & WhatsApp', text: '5555555555', icon: 'M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z' },
-                  { title: 'Email', text: 'info@opstramedical.com', icon: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z' },
-                  { title: 'Hours', text: 'Mon–Fri: 8:00 AM – 8:00 PM\nSat: 9:00 AM – 5:00 PM', icon: 'M12 12' },
-                ].map((item, index) => (
-                  <div className="contact-item" key={index}>
-                    <div className="contact-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d={item.icon}></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h4>{item.title}</h4>
-                      <p style={{ whiteSpace: 'pre-line' }}>{item.text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="testimonial-author">
+              <img src="/patient-smiling.jpg" alt="Daniel Thompson" className="author-image" />
+              <p className="author-name">Daniel Thompson</p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="contact-actions">
-              <a href="https://wa.me/5555555555" className="btn btn-primary btn-large">Book Appointment</a>
-              <a href="#" className="btn btn-secondary btn-large">Get Directions</a>
+      {/* Newsletter Section */}
+      <section className="newsletter-section">
+        <div className="container">
+          <div className="newsletter-content">
+            <div className="newsletter-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div className="newsletter-text">
+              <h3>Subscribe To Our Newsletter</h3>
+              <p>Join our community for health advice, updates, and special announcements</p>
+            </div>
+            <div className="newsletter-form">
+              <input type="email" placeholder="Enter your email" className="newsletter-input" />
+              <button type="submit" className="btn btn-cyan">Subscribe</button>
             </div>
           </div>
         </div>
@@ -255,18 +271,18 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <div className="footer-content">
-            <div className="footer-section">
+          <div className="footer-content-new">
+            <div className="footer-section-main">
               <div className="logo">
                 <div className="logo-text">OPSTRA</div>
                 <div className="logo-subtext">MEDICAL GROUP</div>
               </div>
-              <p>Personalized, High-Quality Care for You and Your Family</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               <div className="social-links">
                 {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
-                  <a href="#" aria-label={social} key={social}>
+                  <a href="#" aria-label={social} key={social} className="social-icon">
                     <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                      <circle cx="12" cy="12" r="10"></circle>
                     </svg>
                   </a>
                 ))}
@@ -274,42 +290,69 @@ export default function Home() {
             </div>
 
             <div className="footer-section">
-              <h4>Quick Links</h4>
+              <h4>Contact Details</h4>
+              <ul className="footer-contact">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Jl. Raya Kuta No.70,<br/>Kuta</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>support@domain.com</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>8 AM - 5 PM, Monday - Saturday</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>(+021) 2335 278</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="footer-section">
+              <h4>Other Pages</h4>
               <ul>
+                <li><Link href="/">Home</Link></li>
                 <li><Link href="#about">About Us</Link></li>
-                <li><Link href="#services">Services</Link></li>
-                <li><Link href="#patients">For Patients</Link></li>
+                <li><Link href="#services">Our Services</Link></li>
+                <li><Link href="#patients">For Patient</Link></li>
                 <li><Link href="#contact">Contact</Link></li>
               </ul>
             </div>
 
             <div className="footer-section">
-              <h4>Services</h4>
-              <ul>
-                <li><a href="#">General Practice</a></li>
-                <li><a href="#">Preventive Health</a></li>
-                <li><a href="#">Specialist Services</a></li>
-                <li><a href="#">Cardiology</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h4>Contact</h4>
-              <ul>
-                <li>Asylum Down, Accra</li>
-                <li>Tel: 5555555555</li>
-                <li>info@opstramedical.com</li>
-                <li>Mon–Fri: 8AM – 8PM</li>
-              </ul>
+              <h4>Make Appointment</h4>
+              <div className="footer-call">
+                <div className="call-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p className="call-label">Call Us</p>
+                  <p className="call-number">(+021) 2335 278</p>
+                </div>
+              </div>
+              <p className="footer-desc">Lorem ipsum dolor sit, consectetur adipiscing elit, sed do et euismod</p>
             </div>
           </div>
 
-          <div className="footer-bottom">
-            <p>&copy; 2025 Opstra Medical Group. All rights reserved.</p>
-            <div className="footer-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-            </div>
+          <div className="footer-bottom-new">
+            <p>Medical & Healthcare Template Kit By Belmiz</p>
+            <p>Copyright © 2021 All rights reserved.</p>
           </div>
         </div>
       </footer>
