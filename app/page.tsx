@@ -44,12 +44,80 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
+              <div className="hero-label">CARING FOR LIFE</div>
               <h1>Personalized,<br/>High-Quality Care for<br/>You and Your Family</h1>
               <p>At Opstra Medical Group, our team of skilled physicians and nurses work together to support your health at every stage of life. We offer modern, patient-centered healthcare in Ghana—focused on prevention, treatment, and compassionate care in a welcoming, tech-enabled environment.</p>
               <a href="https://wa.me/5555555555" className="btn btn-primary">Book an Appointment</a>
             </div>
             <div className="hero-image">
               <img src="/doctor-hero.jpg" alt="Professional healthcare provider" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services-section" id="services">
+        <div className="container">
+          <h3 className="section-label-center">Our Services</h3>
+          <h2 className="services-title">Comprehensive Healthcare<br/>Services For Your Family</h2>
+          <p className="services-subtitle">From routine checkups to specialized care, we're here for you at every step</p>
+
+          <div className="services-grid">
+            <div className="service-card service-card-featured">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h3>General Practice</h3>
+              <p>Comprehensive primary care for all ages. We diagnose, treat, and manage chronic conditions, vaccinations, and preventive health.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3>Preventive Health</h3>
+              <p>Regular health screenings, lifestyle counseling, and early detection services to keep you healthy.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3>Specialist Services</h3>
+              <p>Access to specialists for consultations, diagnostics, and targeted treatments tailored to your needs.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <h3>Cardiology</h3>
+              <p>Heart health assessments, ECG, blood pressure monitoring, and management of cardiovascular conditions.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3>Telemedicine</h3>
+              <p>Virtual consultations for convenience, follow-ups, and medical advice from the comfort of your home.</p>
             </div>
           </div>
         </div>
@@ -136,7 +204,8 @@ export default function Home() {
 
       {/* Trust Section */}
       <section className="trust-section">
-        <div className="container">
+        <div className="trust-section-bg" style={{backgroundImage: 'url(/trust-us.jpg)'}}></div>
+        <div className="container trust-section-container">
           <div className="trust-layout">
             <div className="trust-content">
               <h3 className="section-label-white">Opstra Medical Group</h3>
