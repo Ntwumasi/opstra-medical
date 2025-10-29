@@ -56,79 +56,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="services-section" id="services">
-        <div className="container">
-          <h3 className="section-label-center">Our Services</h3>
-          <h2 className="services-title">Comprehensive Healthcare<br/>Services For Your Family</h2>
-          <p className="services-subtitle">From routine checkups to specialized care, we're here for you at every step</p>
-
-          <div className="services-grid">
-            <div className="service-card service-card-featured">
-              <div className="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-              </div>
-              <h3>General Practice</h3>
-              <p>Comprehensive primary care for all ages. We diagnose, treat, and manage chronic conditions, vaccinations, and preventive health.</p>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-              </div>
-              <h3>Preventive Health</h3>
-              <p>Regular health screenings, lifestyle counseling, and early detection services to keep you healthy.</p>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <h3>Specialist Services</h3>
-              <p>Access to specialists for consultations, diagnostics, and targeted treatments tailored to your needs.</p>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                </svg>
-              </div>
-              <h3>Cardiology</h3>
-              <p>Heart health assessments, ECG, blood pressure monitoring, and management of cardiovascular conditions.</p>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-              <h3>Telemedicine</h3>
-              <p>Virtual consultations for convenience, follow-ups, and medical advice from the comfort of your home.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Work Section */}
+      {/* How We Are Section */}
       <section className="how-we-work">
         <div className="container">
           <div className="how-we-work-layout">
+            <div className="how-we-work-images">
+              <div className="image-grid">
+                <img src="/team-doctors.jpg" alt="Medical team" className="image-large" />
+              </div>
+            </div>
+
             <div className="how-we-work-content">
-              <h3 className="section-label">How We Work</h3>
+              <h3 className="section-label">How We Are</h3>
               <h2>A Comprehensive Directory For<br/>Your Health Care</h2>
               <p className="subtitle">Explore services, specialists, and support in one place, easily find the services and specialists you need.</p>
 
@@ -191,12 +130,85 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="how-we-work-images">
-              <div className="image-grid">
-                <img src="/doctor-hero.jpg" alt="Medical professional" className="image-large" />
-                <img src="/team-doctors.jpg" alt="Medical team" className="image-small" />
+      {/* Services Section */}
+      <section className="services-section" id="services">
+        <div className="container">
+          <h3 className="section-label-center">Our Services</h3>
+          <h2 className="services-title">Our Healthcare Service</h2>
+          <p className="services-subtitle">We provide the most full medical services, so every person could have the opportunity to receive qualitative medical help</p>
+
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
               </div>
+              <h3>General Practice</h3>
+              <p>Comprehensive primary care for all ages. We diagnose, treat, and manage chronic conditions, vaccinations, and preventive health.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3>Preventive Health</h3>
+              <p>Regular health screenings, lifestyle counseling, and early detection services to keep you healthy.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3>Specialist Services</h3>
+              <p>Access to specialists for consultations, diagnostics, and targeted treatments tailored to your needs.</p>
+            </div>
+
+            <div className="service-card service-card-featured">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <h3>Cardiology</h3>
+              <p>Heart health assessments, ECG, blood pressure monitoring, and management of cardiovascular conditions.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3>Telemedicine</h3>
+              <p>Virtual consultations for convenience, follow-ups, and medical advice from the comfort of your home.</p>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+              <h3>Dental Care</h3>
+              <p>Complete dental services for healthy teeth and gums, from routine checkups to advanced treatments.</p>
             </div>
           </div>
         </div>
