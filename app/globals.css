@@ -322,7 +322,7 @@ img {
   align-items: center;
   gap: var(--space-2);
   padding: 16px 40px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
   text-decoration: none;
@@ -333,14 +333,14 @@ img {
 }
 
 .btn-primary {
-  background: var(--accent-cyan);
+  background: #0a1f44;
   color: var(--text-white);
 }
 
 .btn-primary:hover {
-  background: #00C4B0;
+  background: #0d2859;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-cyan);
+  box-shadow: 0 8px 24px rgba(10, 31, 68, 0.4);
 }
 
 .btn-secondary {
@@ -1067,7 +1067,7 @@ textarea.form-input {
   background: var(--accent-cyan);
   color: var(--text-white);
   padding: 16px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
   border: none;
