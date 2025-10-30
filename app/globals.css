@@ -255,9 +255,10 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 55%;
+  right: 0;
   bottom: 0;
-  background: var(--bg-white);
+  background: #0a1f44;
+  clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
   z-index: 0;
 }
 
@@ -268,10 +269,9 @@ img {
 }
 
 .hero-text-card {
-  background: var(--bg-white);
+  background: transparent;
   padding: var(--space-12);
   border-radius: 0;
-  box-shadow: var(--shadow-xl);
   max-width: 550px;
 }
 
@@ -279,14 +279,14 @@ img {
   font-size: var(--text-h1);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-  color: var(--primary-dark-blue);
+  color: var(--text-white);
   margin-bottom: var(--space-6);
 }
 
 .hero-text-card p {
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: var(--space-8);
 }
 
