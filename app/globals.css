@@ -503,7 +503,7 @@ img {
   min-height: 600px;
   object-fit: cover;
   border-radius: var(--radius-lg);
-  box-shadow: 32px 16px 0 #ecfeff;
+  box-shadow: -48px 16px 0 #ecfeff;
 }
 
 .about-image-overlay {
