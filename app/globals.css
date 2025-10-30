@@ -916,7 +916,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(27, 91, 90, 0.92) 0%, rgba(0, 217, 192, 0.88) 100%);
+  background: #0a1f44;
 }
 
 .trust-section-container {
