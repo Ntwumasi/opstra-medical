@@ -39,18 +39,14 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-shape"></div>
+      <section className="hero" style={{backgroundImage: 'url(/doctor-hero.jpg)'}}>
+        <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <div className="hero-text">
-              <div className="hero-label">CARING FOR LIFE</div>
+            <div className="hero-text-card">
               <h1>Personalized,<br/>High-Quality Care for<br/>You and Your Family</h1>
               <p>At Opstra Medical Group, our team of skilled physicians and nurses work together to support your health at every stage of life. We offer modern, patient-centered healthcare in Ghana—focused on prevention, treatment, and compassionate care in a welcoming, tech-enabled environment.</p>
               <a href="https://wa.me/5555555555" className="btn btn-primary">Book an Appointment</a>
-            </div>
-            <div className="hero-image">
-              <img src="/doctor-hero.jpg" alt="Professional healthcare provider" />
             </div>
           </div>
         </div>

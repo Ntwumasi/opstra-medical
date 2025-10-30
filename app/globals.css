@@ -241,30 +241,52 @@ img {
 /* Hero Section */
 .hero {
   padding: var(--section-padding-y) 0;
-  background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--primary-navy) 100%);
+  min-height: 600px;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-}
-
-.hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
+  display: flex;
   align-items: center;
 }
 
-.hero-text {
-  color: var(--text-white);
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 31, 68, 0.05);
+  z-index: 0;
 }
 
-.hero-label {
-  font-size: var(--text-sm);
-  font-weight: var(--font-semibold);
-  color: var(--accent-cyan);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: var(--space-4);
-  display: inline-block;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero-text-card {
+  background: var(--bg-white);
+  padding: var(--space-12);
+  border-radius: 0;
+  box-shadow: var(--shadow-xl);
+}
+
+.hero-text-card h1 {
+  font-size: var(--text-h1);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--primary-dark-blue);
+  margin-bottom: var(--space-6);
+}
+
+.hero-text-card p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-8);
 }
 
 .section-label {
@@ -284,34 +306,6 @@ img {
   letter-spacing: 2px;
   margin-bottom: var(--space-4);
   display: inline-block;
-}
-
-.hero-text h1 {
-  font-size: var(--text-h1);
-  font-weight: var(--font-bold);
-  line-height: var(--leading-tight);
-  color: var(--text-white);
-  margin-bottom: var(--space-6);
-}
-
-.hero-text .highlight {
-  color: var(--accent-cyan);
-}
-
-.hero-text p {
-  font-size: var(--text-lg);
-  line-height: var(--leading-relaxed);
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 520px;
-  margin-bottom: var(--space-8);
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  max-width: 600px;
-  margin-left: auto;
-  display: block;
 }
 
 /* Buttons */
@@ -897,7 +891,7 @@ img {
 .appointment-overlay .overlay-icon {
   width: 56px;
   height: 56px;
-  background: var(--primary-dark-blue);
+  background: var(--primary-navy);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
