@@ -357,7 +357,7 @@ export default function Home() {
 
       {/* Trust Section */}
       <section className="trust-section">
-        <div className="trust-section-bg" style={{backgroundImage: 'url(/trust-us.jpg)'}}></div>
+        {/* <div className="trust-section-bg" style={{backgroundImage: 'url(/trust-us.jpg)'}}></div> */}
         <div className="container trust-section-container">
           <div className="trust-layout">
             <div className="trust-content">
