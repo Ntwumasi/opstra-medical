@@ -576,8 +576,8 @@ export default function Home() {
           </div>
 
           <div className="footer-bottom-new">
-            <p>Medical & Healthcare Template Kit By Belmiz</p>
-            <p>Copyright © 2021 All rights reserved.</p>
+            <p>Website by <a href="https://kodedit.io" target="_blank" rel="noopener noreferrer" className="footer-credit-link">Kodedit</a></p>
+            <p>Copyright © 2025 Opstra Medical Group. All rights reserved.</p>
           </div>
         </div>
       </footer>
