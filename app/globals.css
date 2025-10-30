@@ -499,7 +499,7 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 8px 8px 0 #ecfeff;
 }
 
 .about-image-column {
@@ -513,7 +513,7 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius-lg);
-  box-shadow: 8px 8px 0 #ecfeff;
+  box-shadow: var(--shadow-md);
 }
 
 .about-content h2 {

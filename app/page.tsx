@@ -57,13 +57,7 @@ export default function Home() {
         <div className="container">
           <div className="about-layout">
             <div className="about-images">
-              <div className="about-image-grid">
-                <img src="/doctor-hero.jpg" alt="Doctor" className="about-image-large" />
-                <div className="about-image-column">
-                  <img src="/team-doctors.jpg" alt="Medical Team" className="about-image-small" />
-                  <img src="/patient-smiling.jpg" alt="Doctor" className="about-image-small" />
-                </div>
-              </div>
+              <img src="/doctor-hero.jpg" alt="Doctor" className="about-image-large" />
             </div>
 
             <div className="about-content">
