@@ -241,9 +241,9 @@ img {
 /* Hero Section */
 .hero {
   padding: var(--section-padding-y) 0;
-  min-height: 600px;
+  min-height: 650px;
   background-size: cover;
-  background-position: center right;
+  background-position: right center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -255,9 +255,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  width: 55%;
   bottom: 0;
-  background: rgba(10, 31, 68, 0.05);
+  background: var(--bg-white);
   z-index: 0;
 }
 
@@ -272,6 +272,7 @@ img {
   padding: var(--space-12);
   border-radius: 0;
   box-shadow: var(--shadow-xl);
+  max-width: 550px;
 }
 
 .hero-text-card h1 {
