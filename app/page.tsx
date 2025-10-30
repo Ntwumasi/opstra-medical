@@ -280,8 +280,8 @@ export default function Home() {
         <div className="container">
           <div className="directory-layout">
             <div className="directory-content">
-              <h3 className="section-label">Healthcare Directory</h3>
-              <h2>A Comprehensive Directory For Your Health Care</h2>
+              <h3 className="section-label">How We Work</h3>
+              <h3>A Comprehensive Directory For Your Health Care</h3>
               <p className="directory-description">Easily connect with healthcare professionals and services through our comprehensive directory. Book appointments, check availability, and manage your healthcare journey all in one place.</p>
 
               <div className="directory-features">
