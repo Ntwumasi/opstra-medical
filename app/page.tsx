@@ -267,9 +267,16 @@ export default function Home() {
               </div>
               <div className="appointment-text">
                 <h3>Open for Appointments</h3>
-                <p>We will be happy to answer all your questions</p>
+                <p>Your health matters, schedule your care, on your time</p>
               </div>
-              <a href="https://wa.me/5555555555" className="btn btn-cyan">Book Now</a>
+              <a href="https://wa.me/5555555555" className="btn btn-cyan">Make Appointment</a>
+              <a href="#services" className="all-services-link">
+                All Services
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
