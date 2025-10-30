@@ -344,7 +344,8 @@ export default function Home() {
             </div>
 
             <div className="directory-image">
-              <img src="/doctor-hero.jpg" alt="Healthcare Professional" />
+              <img src="/doctor-hero.jpg" alt="Healthcare Professional" className="directory-image-main" />
+              <img src="/patient-smiling.jpg" alt="Patient" className="directory-image-overlay" />
             </div>
           </div>
         </div>
