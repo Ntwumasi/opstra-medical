@@ -1065,7 +1065,7 @@ img {
 /* Appointment Form Section */
 .appointment-form-section {
   padding: var(--section-padding-y) 0;
-  background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--primary-navy) 100%);
+  background: linear-gradient(to bottom, #0a1f44 0%, #0a1f44 55%, #f0f7ff 55%, #f0f7ff 100%);
 }
 
 .appointment-form-layout {
@@ -1792,8 +1792,17 @@ textarea.form-input {
   }
 
   .hero-content,
-  .about-layout {
+  .about-layout,
+  .directory-layout {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero-overlay {
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 50%);
   }
 
   .services-grid {
@@ -1808,6 +1817,16 @@ textarea.form-input {
     grid-template-columns: 1fr 1fr;
   }
 
+  .appointment-form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-8);
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1815,9 +1834,9 @@ textarea.form-input {
 
 @media (max-width: 768px) {
   :root {
-    --text-h1: 36px;
-    --text-h2: 32px;
-    --text-h3: 28px;
+    --text-h1: 32px;
+    --text-h2: 28px;
+    --text-h3: 24px;
     --section-padding-y: 48px;
   }
 
@@ -1845,32 +1864,111 @@ textarea.form-input {
     gap: var(--space-4);
   }
 
-  .hero-content,
+  /* Hero Section */
+  .hero {
+    min-height: 600px;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 45%);
+  }
+
+  .hero-text-card {
+    padding: var(--space-8);
+    max-width: 100%;
+  }
+
+  .hero-text-card h1 {
+    font-size: 28px;
+  }
+
+  /* About Section */
   .about-layout,
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .about-image-large,
+  .about-image-small {
+    height: 250px;
+  }
+
+  /* Services Section */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  /* Directory Section */
+  .directory-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .directory-content h2 {
+    font-size: 28px;
+  }
+
+  .directory-image {
+    height: 300px;
+  }
+
+  /* Trust Section */
+  .trust-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-cards {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .trust-content h2 {
+    font-size: 28px;
+  }
+
+  /* Appointment Form Section */
   .appointment-form-layout {
     grid-template-columns: 1fr;
   }
 
-  .about-features {
-    grid-template-columns: 1fr;
+  .appointment-image-section {
+    min-height: 300px;
   }
 
-  .services-grid,
-  .trust-cards {
-    grid-template-columns: 1fr;
+  .appointment-overlay h3 {
+    font-size: 24px;
   }
 
-  .about-features {
-    grid-template-columns: 1fr;
+  /* Appointment Banner */
+  .appointment-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-6);
+    padding: var(--space-6);
   }
 
+  .appointment-text h3 {
+    font-size: 20px;
+  }
+
+  /* Form Elements */
   .form-row,
   .form-row-inline {
     grid-template-columns: 1fr;
   }
 
+  /* Newsletter Section */
   .newsletter-content {
     flex-direction: column;
+    gap: var(--space-6);
+    text-align: center;
   }
 
   .newsletter-form {
@@ -1882,15 +1980,72 @@ textarea.form-input {
     min-width: 100%;
   }
 
+  .newsletter-icon {
+    margin: 0 auto;
+  }
+
+  /* Footer */
   .footer-grid,
   .footer-content-new {
     grid-template-columns: 1fr;
+    gap: var(--space-8);
   }
 
-  .footer-bottom {
+  .footer-bottom,
+  .footer-bottom-new {
     flex-direction: column;
     gap: var(--space-4);
     text-align: center;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  :root {
+    --text-h1: 28px;
+    --text-h2: 24px;
+    --text-h3: 20px;
+    --section-padding-y: 40px;
+  }
+
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero-text-card {
+    padding: var(--space-6);
+  }
+
+  .hero-text-card h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: var(--text-sm);
+  }
+
+  .service-card,
+  .trust-card {
+    padding: var(--space-6);
+  }
+
+  .directory-feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .directory-feature-icon {
+    margin: 0 auto;
+  }
+
+  .appointment-banner {
+    padding: var(--space-5);
   }
 }
 
