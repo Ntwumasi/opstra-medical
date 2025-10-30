@@ -1941,6 +1941,10 @@ textarea.form-input {
     grid-template-columns: 1fr;
   }
 
+  .about-images {
+    display: none;
+  }
+
   .about-image-grid {
     grid-template-columns: 1fr;
     gap: var(--space-4);
@@ -1975,6 +1979,10 @@ textarea.form-input {
     font-size: 28px;
   }
 
+  .directory-image {
+    display: none;
+  }
+
   .directory-image-main {
     min-height: 400px;
   }
@@ -2004,7 +2012,7 @@ textarea.form-input {
   }
 
   .appointment-image-section {
-    min-height: 300px;
+    display: none;
   }
 
   .appointment-overlay h3 {
