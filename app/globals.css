@@ -208,7 +208,7 @@ img {
   background: var(--accent-cyan);
   color: var(--text-white) !important;
   padding: 12px 32px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
   transition: all 0.2s ease;
@@ -1441,7 +1441,7 @@ textarea.form-input {
   background: var(--accent-cyan);
   color: var(--text-white);
   padding: 14px 32px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   font-size: 15px;
   font-weight: var(--font-semibold);
   border: none;
