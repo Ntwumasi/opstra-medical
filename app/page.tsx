@@ -52,79 +52,88 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How We Are Section */}
-      <section className="how-we-work">
+      {/* About Us Section */}
+      <section className="about-section" id="about">
         <div className="container">
-          <div className="how-we-work-layout">
-            <div className="how-we-work-images">
-              <div className="image-grid">
-                <img src="/team-doctors.jpg" alt="Medical team" className="image-large" />
+          <div className="about-layout">
+            <div className="about-images">
+              <div className="about-image-grid">
+                <img src="/doctor-hero.jpg" alt="Doctor" className="about-image-large" />
+                <div className="about-image-column">
+                  <img src="/team-doctors.jpg" alt="Medical Team" className="about-image-small" />
+                  <img src="/patient-smiling.jpg" alt="Doctor" className="about-image-small" />
+                </div>
               </div>
             </div>
 
-            <div className="how-we-work-content">
-              <h3 className="section-label">How We Are</h3>
-              <h2>A Comprehensive Directory For<br/>Your Health Care</h2>
-              <p className="subtitle">Explore services, specialists, and support in one place, easily find the services and specialists you need.</p>
+            <div className="about-content">
+              <h3 className="section-label">About Us</h3>
+              <h2>Who We Are</h2>
+              <p className="about-description">At Opstra Medical Group, we believe that everyone deserves access to compassionate, high-quality healthcare. Based in Accra, Ghana, we are committed to providing personalized, evidence-based medical services that are affordable and focused on the unique needs of each patient.</p>
 
-              <div className="work-steps">
-                <div className="work-step">
-                  <div className="step-icon">
+              <div className="about-features">
+                <div className="about-feature">
+                  <div className="about-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
                   </div>
-                  <div className="step-content">
-                    <h4>Book an Appointment</h4>
-                    <p>Choose a convenient time and book online or by phone</p>
+                  <div className="about-feature-text">
+                    <h4>Quality of Care Services</h4>
+                    <p>Delivering personalized, patient-centered healthcare you can trust.</p>
                   </div>
                 </div>
 
-                <div className="work-step">
-                  <div className="step-icon">
+                <div className="about-feature">
+                  <div className="about-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                     </svg>
                   </div>
-                  <div className="step-content">
-                    <h4>Conduct Checkup</h4>
-                    <p>Our medical team assesses your health and listens to your concerns</p>
+                  <div className="about-feature-text">
+                    <h4>Standards of Treatment</h4>
+                    <p>Evidence-based, world-class medical care for every patient.</p>
                   </div>
                 </div>
 
-                <div className="work-step">
-                  <div className="step-icon">
+                <div className="about-feature">
+                  <div className="about-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                      <polyline points="14 2 14 8 20 8"></polyline>
-                      <line x1="16" y1="13" x2="8" y2="13"></line>
-                      <line x1="16" y1="17" x2="8" y2="17"></line>
-                      <polyline points="10 9 9 9 8 9"></polyline>
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
                     </svg>
                   </div>
-                  <div className="step-content">
-                    <h4>Perform Treatment</h4>
-                    <p>Receive the right care, tailored to your diagnosis and needs</p>
+                  <div className="about-feature-text">
+                    <h4>Infection Prevention</h4>
+                    <p>Prioritizing your safety with strict hygiene and control measures</p>
                   </div>
                 </div>
 
-                <div className="work-step">
-                  <div className="step-icon">
+                <div className="about-feature">
+                  <div className="about-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
                     </svg>
                   </div>
-                  <div className="step-content">
-                    <h4>Prescribe & Payment</h4>
-                    <p>Get your prescription and settle payments easily at our front desk</p>
+                  <div className="about-feature-text">
+                    <h4>24/7 Working Time</h4>
+                    <p>Reliable, round-the-clock care — whenever you need us</p>
                   </div>
                 </div>
               </div>
+
+              <div className="about-highlights">
+                <p><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 24 Hours Emergency Assistance Call Us</p>
+                <p><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> We are committed to providing healthcare service</p>
+                <p><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Really know the true needs and expectations of patients</p>
+              </div>
+
+              <a href="#contact" className="btn btn-cyan">More About Us</a>
             </div>
           </div>
         </div>

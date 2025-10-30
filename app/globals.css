@@ -471,56 +471,80 @@ img {
   color: var(--text-secondary);
 }
 
-/* How We Work Section */
-.how-we-work {
+/* About Us Section */
+.about-section {
   padding: var(--section-padding-y) 0;
   background: var(--bg-white);
 }
 
-.how-we-work-layout {
+.about-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-16);
   align-items: center;
 }
 
-.how-we-work-content h2 {
-  font-size: var(--text-h2);
-  font-weight: var(--font-bold);
-  line-height: var(--leading-tight);
-  color: var(--primary-dark-blue);
-  margin-bottom: var(--space-4);
+.about-images {
+  position: relative;
 }
 
-.how-we-work-content h3 {
-  font-size: var(--text-sm);
-  font-weight: var(--font-semibold);
-  color: var(--accent-cyan);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: var(--space-4);
+.about-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
 }
 
-.how-we-work-content .subtitle {
-  font-size: var(--text-base);
-  line-height: var(--leading-relaxed);
-  color: var(--text-secondary);
-  margin-bottom: var(--space-10);
+.about-image-large {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
-.work-steps {
+.about-image-column {
   display: flex;
   flex-direction: column;
   gap: var(--space-6);
 }
 
-.work-step {
+.about-image-small {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.about-content h2 {
+  font-size: var(--text-h2);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--primary-dark-blue);
+  margin-bottom: var(--space-6);
+}
+
+.about-description {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-8);
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.about-feature {
   display: flex;
-  gap: var(--space-4);
+  gap: var(--space-3);
   align-items: flex-start;
 }
 
-.step-icon {
+.about-feature-icon {
   width: 48px;
   height: 48px;
   background: var(--bg-light-cyan);
@@ -531,47 +555,48 @@ img {
   flex-shrink: 0;
 }
 
-.step-icon svg {
+.about-feature-icon svg {
   width: 24px;
   height: 24px;
   color: var(--accent-cyan);
 }
 
-.step-content h4 {
-  font-size: var(--text-lg);
+.about-feature-text h4 {
+  font-size: var(--text-base);
   font-weight: var(--font-semibold);
   color: var(--primary-dark-blue);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-1);
 }
 
-.step-content p {
-  font-size: var(--text-base);
+.about-feature-text p {
+  font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
   color: var(--text-secondary);
 }
 
-.how-we-work-images {
-  position: relative;
+.about-highlights {
+  background: var(--bg-light-blue);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-8);
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-6);
+.about-highlights p {
+  display: flex;
   align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
 }
 
-.image-grid .image-large {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  grid-column: span 2;
+.about-highlights p:last-child {
+  margin-bottom: 0;
 }
 
-.image-grid .image-small {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+.about-highlights svg {
+  color: var(--accent-cyan);
+  flex-shrink: 0;
 }
 
 /* Services Section */
@@ -1589,7 +1614,7 @@ textarea.form-input {
   }
 
   .hero-content,
-  .how-we-work-layout {
+  .about-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1644,8 +1669,11 @@ textarea.form-input {
 
   .hero-content,
   .about-layout,
-  .how-we-work-layout,
   .appointment-form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-features {
     grid-template-columns: 1fr;
   }
 
