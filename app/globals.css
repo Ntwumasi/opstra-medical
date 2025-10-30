@@ -712,6 +712,74 @@ img {
   color: var(--accent-cyan);
 }
 
+.service-link-featured {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--accent-cyan);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: gap 0.2s ease;
+}
+
+.service-link-featured:hover {
+  gap: var(--space-3);
+}
+
+/* Services Appointment Banner */
+.services-appointment {
+  margin-top: var(--space-12);
+}
+
+.appointment-banner {
+  background: var(--bg-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10) var(--space-12);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  border: 1px solid var(--border-light);
+}
+
+.appointment-icon {
+  width: 72px;
+  height: 72px;
+  background: var(--bg-light-cyan);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.appointment-icon svg {
+  width: 36px;
+  height: 36px;
+  color: var(--accent-cyan);
+}
+
+.appointment-text {
+  flex: 1;
+}
+
+.appointment-text h3 {
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  color: var(--primary-dark-blue);
+  margin-bottom: var(--space-2);
+}
+
+.appointment-text p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.appointment-banner .btn {
+  flex-shrink: 0;
+}
+
 /* Trust Us Section with Image + Gradient Overlay */
 .trust-section {
   padding: var(--section-padding-y) 0;

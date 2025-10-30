@@ -142,9 +142,10 @@ export default function Home() {
       {/* Services Section */}
       <section className="services-section" id="services">
         <div className="container">
-          <h3 className="section-label-center">Our Services</h3>
-          <h2 className="services-title">Our Healthcare Service</h2>
-          <p className="services-subtitle">We provide the most full medical services, so every person could have the opportunity to receive qualitative medical help</p>
+          <div className="services-header">
+            <h3 className="section-label-center">Healthcare Services</h3>
+            <h2 className="services-title">Our Healthcare Service</h2>
+          </div>
 
           <div className="services-grid">
             <div className="service-card">
@@ -155,6 +156,13 @@ export default function Home() {
               </div>
               <h3>General Practice</h3>
               <p>Comprehensive primary care for all ages. We diagnose, treat, and manage chronic conditions, vaccinations, and preventive health.</p>
+              <a href="#" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
             </div>
 
             <div className="service-card">
@@ -164,8 +172,15 @@ export default function Home() {
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <h3>Preventive Health</h3>
+              <h3>Preventive Health & Wellness</h3>
               <p>Regular health screenings, lifestyle counseling, and early detection services to keep you healthy.</p>
+              <a href="#" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
             </div>
 
             <div className="service-card">
@@ -179,6 +194,33 @@ export default function Home() {
               </div>
               <h3>Specialist Services</h3>
               <p>Access to specialists for consultations, diagnostics, and targeted treatments tailored to your needs.</p>
+              <a href="#" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3>General Surgery</h3>
+              <p>Safe, modern surgical care for a range of procedures—from minor operations to complex interventions.</p>
+              <a href="#" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
             </div>
 
             <div className="service-card service-card-featured">
@@ -187,8 +229,15 @@ export default function Home() {
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                 </svg>
               </div>
-              <h3>Cardiology</h3>
-              <p>Heart health assessments, ECG, blood pressure monitoring, and management of cardiovascular conditions.</p>
+              <h3>Family Medicine & Pediatrics</h3>
+              <p>Caring for families—from infants to adults. Vaccinations, growth monitoring, and health education for all ages.</p>
+              <a href="#" className="service-link-featured">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
             </div>
 
             <div className="service-card">
@@ -199,21 +248,33 @@ export default function Home() {
                   <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              <h3>Telemedicine</h3>
+              <h3>Telemedicine Services</h3>
               <p>Virtual consultations for convenience, follow-ups, and medical advice from the comfort of your home.</p>
+              <a href="#" className="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
             </div>
+          </div>
 
-            <div className="service-card">
-              <div className="service-icon">
+          <div className="services-appointment">
+            <div className="appointment-banner">
+              <div className="appointment-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
               </div>
-              <h3>Dental Care</h3>
-              <p>Complete dental services for healthy teeth and gums, from routine checkups to advanced treatments.</p>
+              <div className="appointment-text">
+                <h3>Open for Appointments</h3>
+                <p>We will be happy to answer all your questions</p>
+              </div>
+              <a href="https://wa.me/5555555555" className="btn btn-cyan">Book Now</a>
             </div>
           </div>
         </div>
