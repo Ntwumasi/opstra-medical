@@ -58,6 +58,7 @@ export default function Home() {
           <div className="about-layout">
             <div className="about-images">
               <img src="/doctor-hero.jpg" alt="Doctor" className="about-image-large" />
+              <img src="/team-doctors.jpg" alt="Medical Team" className="about-image-overlay" />
             </div>
 
             <div className="about-content">
